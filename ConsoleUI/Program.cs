@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Business.Concrete;
+using DataAccess.Concrete.InMemory;
+using System;
+
 
 namespace ConsoleUI
 {  //interface, base class, abstraclar abstract klasörlere koyulacak. Referans tip tututcular o klasöre
@@ -7,7 +10,15 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            ProductManager productManager = new ProductManager(new InMemoryProductDal());
+
+            foreach (var item in productManager.GetAll())
+            {
+                Console.WriteLine(item.ProductName);
+            }
+            {
+
+            }
         }
     }
 }

@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">  
+  <PropertyGroup>  
+    <TargetFrameworks>net5.0-windows</TargetFrameworks>  
+    <UseWindowsForms>true</UseWindowsForms>  
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>  
+    <AssemblyName>FlexGridOnNet5 (The name of your new 5.0 project)</AssemblyName>  
+    <RootNamespace>FlexGridOnFramework (the name of your solution)</RootNamespace>  
+  </PropertyGroup>
+
+</Project>  

@@ -11,7 +11,7 @@ namespace DataAccess.Concrete.EntityFramework
     {// hangi veri tabanı ile ilişkili
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer();
+            optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB");
             
         }
     }
